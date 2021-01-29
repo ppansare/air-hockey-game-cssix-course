@@ -1,0 +1,16 @@
+title: Air Hockey game CSSIX
+description: 'Air Hockey Game '
+template:
+  repo: air-hockey-game-cssix-template
+  name: air-hockey-game-cssix
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
